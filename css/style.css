@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    font-family: Roboto, sans-serif;
+}
+ul, ol, li{
+    list-style: none;
+}
+
+/* BTN MENU CSS */
+
+.btnMenu{
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    text-indent: -9999px;
+    padding: 20px 15px;
+}
+
+.btnMenu_open{
+    background-image: url(../img/hamburguinho.svg);
+
+}
+.btnMenu_close{
+    background-color: #747c81;
+    background-image: url(../img/hamburguinho-branco.svg);
+}
+
+
+/* MENU CSS */
+.menu{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 200ms linear;
+}
+.menu_open{
+    transform: translateX(0);
+}
+.menu-item{
+    border-bottom: 1px solid rgba(116, 124, 129,0.8);
+    padding: 20px 15px;
+}
+.menu-item-action{
+    color: #747c81;
+    text-decoration: none;
+    text-transform: uppercase;
+}
